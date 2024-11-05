@@ -1,0 +1,110 @@
+/* Basic reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 4%, 37%);
+    color: rgb(238, 233, 233);
+}
+
+/* Background image styling */
+body {
+    background-image: url('images/photo1.jpg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header styling */
+header {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 5%; /* Position header a little down from the top */
+    width: 100%;
+    z-index: 1;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    padding: 10px; 
+    color: #fff; 
+    border: 4px solid #fff;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adds space below header title */
+}
+
+nav ul li {
+    margin: 0 15px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    padding: 10px 15px;
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+/* Image gallery styling */
+.image-gallery {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 40%; /* Adjusted to avoid overlap with the header */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.gallery-text {
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 200px;            
+    height: 200px;            
+    object-fit: cover;          
+    border-radius: 10px;       
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.09);
+}
+
+/* Footer styling */
+footer {
+    background: hsl(158, 32%, 40%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
